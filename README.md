@@ -1,11 +1,30 @@
 # Feria Very Small Size Soccer
 Este repositorio contiene un código para controlar robots de la categoría Very Small Size Soccer (VSSS) usando dos joysticks.
 
+## Primeros pasos
+Si nunca habías usado este programa antes, sigue los siguientes pasos:
+### Dependencias
+PIP
+
+    sudo apt install python3-pip
+
+pyserial
+
+    pip install pyserial
+
+### Permisos
+
+    sudo usermod -a -G dialout your_user_name
+
+Reiniciar
+
+    sudo reboot now
+
 ## Comunicación
 
 El nodo de communicación manda comandos a los robots
 
-    rosrun feria_vsss comunicacion.py
+    rosrun feria_vsss communication.py
 
 ## Joysticks
 
@@ -28,3 +47,4 @@ El comando para conectar el joystick Xbox con la comunicación es:
 El comando para conectar el joystick Machenike con la comunicación es:
 
     rosrun feria_vsss joy_com2.py
+
