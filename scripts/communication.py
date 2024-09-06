@@ -56,7 +56,7 @@ class Comunication:
         
         
 def main():
-    rospy.init_node('comunication')
+    rospy.init_node('communication')
     node = Comunication(3)
     rospy.spin()
     

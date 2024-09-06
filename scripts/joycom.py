@@ -111,7 +111,7 @@ class JoystickVSSS:
         # self.robots[self.current_team][self.current_id][1][0].publish(wr)
     
 def main():
-    rospy.init_node('joystick')
+    rospy.init_node('joycom')
     node = JoystickVSSS(model='XboxOne', topic='/joy', mode='diff', r=0.025, b=0.075)
     rospy.spin()
 
