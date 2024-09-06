@@ -42,9 +42,9 @@ El comando para conectar el joystick Machenike es:
 
 El comando para conectar el joystick Xbox con la comunicación es:
 
-    rosrun feria_vsss joy_com.py
+    rosrun feria_vsss joycom.py
 
 El comando para conectar el joystick Machenike con la comunicación es:
 
-    rosrun feria_vsss joy_com2.py
+    rosrun feria_vsss joycom2.py
 

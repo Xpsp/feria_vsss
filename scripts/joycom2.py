@@ -8,7 +8,7 @@ from sensor_msgs.msg import Joy
 class Joystick:
     def __init__(self, model, topic):
         
-        mapping = np.load(rospkg.RosPack().get_path('drlarac_vsss')+'/scripts/modules/joysticks.npz', allow_pickle=True)
+        mapping = np.load(rospkg.RosPack().get_path('feria_vsss')+'/scripts/modules/joysticks.npz', allow_pickle=True)
         self.buttons_keys, self.axes_keys = mapping[model].item().values()
         
         self.buttons = dict.fromkeys(self.buttons_keys, 0)
