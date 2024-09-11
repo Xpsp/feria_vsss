@@ -112,7 +112,11 @@ class JoystickVSSS:
     
 def main():
     rospy.init_node('joycom')
-    node = JoystickVSSS(model='XboxOne', topic='/joy', mode='diff', r=0.025, b=0.075)
+    
+    node_name = rospy.get_name()
+    model = rospy.get_param(f'{node_name}/model')
+    topic = rospy.get_param(f'{node_name}/topic')
+    node = JoystickVSSS(model=model, topic=topic, mode='diff', r=0.025, b=0.075)
     rospy.spin()
 
 if __name__ == '__main__':
